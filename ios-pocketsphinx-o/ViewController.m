@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 
-#import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface ViewController () <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
@@ -29,6 +28,8 @@
 @implementation ViewController
 @synthesize stopButton, playButton, recordPauseButton;
 
+#pragma mark -
+#pragma mark VC Lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -85,6 +86,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -
+#pragma mark IBActions
 - (IBAction)recordPauseTapped:(id)sender {
     // stop the audio player before recording
     if ( player.playing)
@@ -121,7 +124,6 @@
         player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
         [player setDelegate:self];
         [player play];
-        
     }
 }
 
