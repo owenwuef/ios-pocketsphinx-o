@@ -20,9 +20,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVB-cU-Cy0">
-                                <rect key="frame" x="16" y="234" width="76" height="44"/>
+                                <rect key="frame" x="16" y="234" width="80" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="vrm-2p-eIy"/>
+                                    <constraint firstAttribute="width" constant="80" id="vrm-2p-eIy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Record">
@@ -33,9 +33,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9d-qw-EjF">
-                                <rect key="frame" x="150" y="234" width="58" height="44"/>
+                                <rect key="frame" x="150" y="234" width="80" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="58" id="mNO-Mb-Is4"/>
+                                    <constraint firstAttribute="width" constant="80" id="mNO-Mb-Is4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Stop">
@@ -46,9 +46,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAh-UE-7S3">
-                                <rect key="frame" x="91" y="321" width="55" height="44"/>
+                                <rect key="frame" x="91" y="321" width="80" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="V9S-qk-f8S"/>
+                                    <constraint firstAttribute="width" constant="80" id="V9S-qk-f8S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Play">
@@ -58,16 +58,22 @@
                                     <action selector="playTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZYe-Wx-9gC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVL-zl-ohK">
+                                <rect key="frame" x="24" y="81" width="180" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BVB-cU-Cy0" firstAttribute="baseline" secondItem="A9d-qw-EjF" secondAttribute="firstBaseline" id="4ir-uq-5Vo"/>
                             <constraint firstItem="BVB-cU-Cy0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="214" id="5iv-cV-26H"/>
                             <constraint firstItem="BVB-cU-Cy0" firstAttribute="top" secondItem="A9d-qw-EjF" secondAttribute="top" id="B4k-3C-NsS"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hAh-UE-7S3" secondAttribute="bottom" constant="235" id="HLE-f5-EP3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hAh-UE-7S3" secondAttribute="bottom" constant="229" id="HLE-f5-EP3"/>
                             <constraint firstItem="BVB-cU-Cy0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IKg-Vv-RfJ"/>
-                            <constraint firstItem="A9d-qw-EjF" firstAttribute="leading" secondItem="BVB-cU-Cy0" secondAttribute="trailing" constant="58" id="NbK-ow-LQ2"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BVB-cU-Cy0" secondAttribute="bottom" constant="322" id="UEa-ms-C23"/>
+                            <constraint firstItem="A9d-qw-EjF" firstAttribute="leading" secondItem="BVB-cU-Cy0" secondAttribute="trailing" constant="54" id="NbK-ow-LQ2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BVB-cU-Cy0" secondAttribute="bottom" constant="316" id="UEa-ms-C23"/>
                             <constraint firstItem="hAh-UE-7S3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="301" id="Xua-hu-wif"/>
                             <constraint firstItem="BVB-cU-Cy0" firstAttribute="firstBaseline" secondItem="A9d-qw-EjF" secondAttribute="baseline" id="cLr-do-a4B"/>
                             <constraint firstItem="hAh-UE-7S3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="cgV-aS-4h8"/>
@@ -75,6 +81,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="feedbackTextLabel" destination="HVL-zl-ohK" id="PLq-lD-7CC"/>
                         <outlet property="playButton" destination="hAh-UE-7S3" id="6JO-eJ-WI2"/>
                         <outlet property="recordPauseButton" destination="BVB-cU-Cy0" id="saz-6Z-Wgk"/>
                         <outlet property="stopButton" destination="A9d-qw-EjF" id="9LW-Lk-n3O"/>

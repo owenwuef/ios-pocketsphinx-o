@@ -75,6 +75,8 @@
     recorder.delegate = self;
     recorder.meteringEnabled = YES;
     [recorder prepareToRecord];
+    
+    _feedbackTextLabel.text = @"Ready?";
 }
 
 - (void)didReceiveMemoryWarning
@@ -90,7 +92,6 @@
     
     if(!recorder.recording) {
         AVAudioSession *session = [AVAudioSession sharedInstance];
-        //[session setCategory:AVAudioSessionCategoryRecord error:nil];
         [session setActive:YES error:nil];
         
         // start recording
@@ -111,13 +112,12 @@
     
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:NO error:nil];
+    
+    _feedbackTextLabel.text = @"...";
 }
 
 - (IBAction)playTapped:(id)sender {
     if(!recorder.recording) {
-        //        AVAudioSession* session = [AVAudioSession sharedInstance];
-        //        [session setCategory:AVAudioSessionCategoryPlayback error:nil];
-        
         player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
         [player setDelegate:self];
         [player play];
