@@ -8,15 +8,90 @@
 
 #import "AppDelegate.h"
 
+//#include "pocketsphinx.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+/*
+-(BOOL)initPocketSphinx {
+    ps_decoder_t *ps;
+    cmd_ln_t *config;
+    FILE *fh;
+    char const *hyp, *uttid;
+    unsigned int buf[512];
+    int rv;
+    unsigned long score;
+    
+    config = cmd_ln_init(NULL, ps_args(), TRUE,
+                         "-hmm", MODELDIR "/hmm/en_US/hub4wsj_sc_8k",
+                         "-lm", MODELDIR "/lm/en/turtle.DMP",
+                         "-dict", MODELDIR "/lm/en/turtle.dic",
+                         NULL);
+    if (config == NULL)
+        return YES;
+
+    ps = ps_init(config);
+    if (ps == NULL)
+        return YES;
+    
+    fh = fopen("/dev/input/event14", "rb");
+    if (fh == NULL) {
+        perror("Failed to open goforward.raw");
+        return YES;
+    }
+    
+    rv = ps_decode_raw(ps, fh, NULL, -1);
+    if (rv < 0)
+        return YES;
+    
+    hyp = ps_get_hyp(ps, &score, &uttid);
+    if (hyp == NULL)
+        return YES;
+    printf("Recognized: %s\n", hyp);
+    
+
+    fseek(fh, 0, SEEK_SET);
+    rv = ps_start_utt(ps, NULL);
+    if (rv < 0)
+        return YES;
+    while (!feof(fh)) {
+        rv = ps_start_utt(ps, NULL);
+        if (rv < 0)
+            return YES;
+        
+        printf("ready:\n");
+        size_t nsamp;
+        nsamp = fread(buf, 2, 512, fh);
+        printf("read:\n");
+
+        rv = ps_process_raw(ps, buf, nsamp, FALSE, FALSE);
+        printf("process:\n");
+    }
+    
+    rv = ps_end_utt(ps);
+    if (rv < 0)
+        return YES;
+    
+    hyp = ps_get_hyp(ps, &score, &uttid);
+    if (hyp == NULL)
+        return YES;
+    printf("Recognized: %s\n", hyp);
+
+    fclose(fh);
+    ps_free(ps);
+}
+ 
+ http://blog.csdn.net/u012637501/article/details/40875081
+*/
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     // Override point for customization after application launch.
+//    return [self initPocketSphinx];
     return YES;
 }
 
