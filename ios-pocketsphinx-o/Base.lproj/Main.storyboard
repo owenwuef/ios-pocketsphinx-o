@@ -2,6 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,30 +19,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3R-Ra-UFN">
-                                <rect key="frame" x="111" y="260" width="120" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="REC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVB-cU-Cy0">
+                                <rect key="frame" x="16" y="234" width="76" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="vrm-2p-eIy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Record">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="recordPauseTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zn3-RD-asg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymn-ye-EBa">
-                                <rect key="frame" x="134" y="363" width="75" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9d-qw-EjF">
+                                <rect key="frame" x="150" y="234" width="58" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="mNO-Mb-Is4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Diw-93-NTj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAh-UE-7S3">
+                                <rect key="frame" x="91" y="321" width="55" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="V9S-qk-f8S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZYe-Wx-9gC"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYJ-l9-bFU">
-                                <rect key="frame" x="0.0" y="0.0" width="342" height="183"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BVB-cU-Cy0" firstAttribute="baseline" secondItem="A9d-qw-EjF" secondAttribute="firstBaseline" id="4ir-uq-5Vo"/>
+                            <constraint firstItem="BVB-cU-Cy0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="214" id="5iv-cV-26H"/>
+                            <constraint firstItem="BVB-cU-Cy0" firstAttribute="top" secondItem="A9d-qw-EjF" secondAttribute="top" id="B4k-3C-NsS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hAh-UE-7S3" secondAttribute="bottom" constant="235" id="HLE-f5-EP3"/>
+                            <constraint firstItem="BVB-cU-Cy0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IKg-Vv-RfJ"/>
+                            <constraint firstItem="A9d-qw-EjF" firstAttribute="leading" secondItem="BVB-cU-Cy0" secondAttribute="trailing" constant="58" id="NbK-ow-LQ2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BVB-cU-Cy0" secondAttribute="bottom" constant="322" id="UEa-ms-C23"/>
+                            <constraint firstItem="hAh-UE-7S3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="301" id="Xua-hu-wif"/>
+                            <constraint firstItem="BVB-cU-Cy0" firstAttribute="firstBaseline" secondItem="A9d-qw-EjF" secondAttribute="baseline" id="cLr-do-a4B"/>
+                            <constraint firstItem="hAh-UE-7S3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="cgV-aS-4h8"/>
+                            <constraint firstItem="A9d-qw-EjF" firstAttribute="baseline" secondItem="BVB-cU-Cy0" secondAttribute="baseline" id="uW1-eT-yaI"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="btn" destination="Y3R-Ra-UFN" id="ztG-SX-hHG"/>
-                        <outlet property="imageView" destination="fYJ-l9-bFU" id="GAE-Xf-apc"/>
-                        <outlet property="playBtn" destination="Ymn-ye-EBa" id="B1N-hp-EXX"/>
+                        <outlet property="playButton" destination="hAh-UE-7S3" id="6JO-eJ-WI2"/>
+                        <outlet property="recordPauseButton" destination="BVB-cU-Cy0" id="saz-6Z-Wgk"/>
+                        <outlet property="stopButton" destination="A9d-qw-EjF" id="9LW-Lk-n3O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
