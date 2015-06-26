@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		134F14661B3CF6FC0016C386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F14651B3CF6FC0016C386 /* main.m */; };
+		134F14691B3CF6FC0016C386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F14681B3CF6FC0016C386 /* AppDelegate.m */; };
+		134F146C1B3CF6FC0016C386 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F146B1B3CF6FC0016C386 /* ViewController.m */; };
+		134F146F1B3CF6FC0016C386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134F146D1B3CF6FC0016C386 /* Main.storyboard */; };
+		134F14711B3CF6FC0016C386 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134F14701B3CF6FC0016C386 /* Images.xcassets */; };
+		134F14741B3CF6FC0016C386 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134F14721B3CF6FC0016C386 /* LaunchScreen.xib */; };
+		134F14801B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F147F1B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		134F147A1B3CF6FC0016C386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 134F14581B3CF6FC0016C386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 134F145F1B3CF6FC0016C386;
+			remoteInfo = "ios-pocketsphinx-o";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		134F14601B3CF6FC0016C386 /* ios-pocketsphinx-o.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-pocketsphinx-o.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		134F14641B3CF6FC0016C386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		134F14651B3CF6FC0016C386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		134F14671B3CF6FC0016C386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		134F14681B3CF6FC0016C386 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		134F146A1B3CF6FC0016C386 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		134F146B1B3CF6FC0016C386 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		134F146E1B3CF6FC0016C386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		134F14701B3CF6FC0016C386 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		134F14731B3CF6FC0016C386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		134F14791B3CF6FC0016C386 /* ios-pocketsphinx-oTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-pocketsphinx-oTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		134F147E1B3CF6FC0016C386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		134F147F1B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_pocketsphinx_oTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		134F145D1B3CF6FC0016C386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134F14761B3CF6FC0016C386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134F14571B3CF6FC0016C386 = {
+			isa = PBXGroup;
+			children = (
+				134F14621B3CF6FC0016C386 /* ios-pocketsphinx-o */,
+				134F147C1B3CF6FC0016C386 /* ios-pocketsphinx-oTests */,
+				134F14611B3CF6FC0016C386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		134F14611B3CF6FC0016C386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134F14601B3CF6FC0016C386 /* ios-pocketsphinx-o.app */,
+				134F14791B3CF6FC0016C386 /* ios-pocketsphinx-oTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		134F14621B3CF6FC0016C386 /* ios-pocketsphinx-o */ = {
+			isa = PBXGroup;
+			children = (
+				134F14671B3CF6FC0016C386 /* AppDelegate.h */,
+				134F14681B3CF6FC0016C386 /* AppDelegate.m */,
+				134F146A1B3CF6FC0016C386 /* ViewController.h */,
+				134F146B1B3CF6FC0016C386 /* ViewController.m */,
+				134F146D1B3CF6FC0016C386 /* Main.storyboard */,
+				134F14701B3CF6FC0016C386 /* Images.xcassets */,
+				134F14721B3CF6FC0016C386 /* LaunchScreen.xib */,
+				134F14631B3CF6FC0016C386 /* Supporting Files */,
+			);
+			path = "ios-pocketsphinx-o";
+			sourceTree = "<group>";
+		};
+		134F14631B3CF6FC0016C386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				134F14641B3CF6FC0016C386 /* Info.plist */,
+				134F14651B3CF6FC0016C386 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		134F147C1B3CF6FC0016C386 /* ios-pocketsphinx-oTests */ = {
+			isa = PBXGroup;
+			children = (
+				134F147F1B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m */,
+				134F147D1B3CF6FC0016C386 /* Supporting Files */,
+			);
+			path = "ios-pocketsphinx-oTests";
+			sourceTree = "<group>";
+		};
+		134F147D1B3CF6FC0016C386 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				134F147E1B3CF6FC0016C386 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		134F145F1B3CF6FC0016C386 /* ios-pocketsphinx-o */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134F14831B3CF6FC0016C386 /* Build configuration list for PBXNativeTarget "ios-pocketsphinx-o" */;
+			buildPhases = (
+				134F145C1B3CF6FC0016C386 /* Sources */,
+				134F145D1B3CF6FC0016C386 /* Frameworks */,
+				134F145E1B3CF6FC0016C386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-pocketsphinx-o";
+			productName = "ios-pocketsphinx-o";
+			productReference = 134F14601B3CF6FC0016C386 /* ios-pocketsphinx-o.app */;
+			productType = "com.apple.product-type.application";
+		};
+		134F14781B3CF6FC0016C386 /* ios-pocketsphinx-oTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134F14861B3CF6FC0016C386 /* Build configuration list for PBXNativeTarget "ios-pocketsphinx-oTests" */;
+			buildPhases = (
+				134F14751B3CF6FC0016C386 /* Sources */,
+				134F14761B3CF6FC0016C386 /* Frameworks */,
+				134F14771B3CF6FC0016C386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134F147B1B3CF6FC0016C386 /* PBXTargetDependency */,
+			);
+			name = "ios-pocketsphinx-oTests";
+			productName = "ios-pocketsphinx-oTests";
+			productReference = 134F14791B3CF6FC0016C386 /* ios-pocketsphinx-oTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		134F14581B3CF6FC0016C386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = OwenWu;
+				TargetAttributes = {
+					134F145F1B3CF6FC0016C386 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					134F14781B3CF6FC0016C386 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 134F145F1B3CF6FC0016C386;
+					};
+				};
+			};
+			buildConfigurationList = 134F145B1B3CF6FC0016C386 /* Build configuration list for PBXProject "ios-pocketsphinx-o" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 134F14571B3CF6FC0016C386;
+			productRefGroup = 134F14611B3CF6FC0016C386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				134F145F1B3CF6FC0016C386 /* ios-pocketsphinx-o */,
+				134F14781B3CF6FC0016C386 /* ios-pocketsphinx-oTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		134F145E1B3CF6FC0016C386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134F146F1B3CF6FC0016C386 /* Main.storyboard in Resources */,
+				134F14741B3CF6FC0016C386 /* LaunchScreen.xib in Resources */,
+				134F14711B3CF6FC0016C386 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134F14771B3CF6FC0016C386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134F145C1B3CF6FC0016C386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134F146C1B3CF6FC0016C386 /* ViewController.m in Sources */,
+				134F14691B3CF6FC0016C386 /* AppDelegate.m in Sources */,
+				134F14661B3CF6FC0016C386 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134F14751B3CF6FC0016C386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134F14801B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		134F147B1B3CF6FC0016C386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 134F145F1B3CF6FC0016C386 /* ios-pocketsphinx-o */;
+			targetProxy = 134F147A1B3CF6FC0016C386 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		134F146D1B3CF6FC0016C386 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				134F146E1B3CF6FC0016C386 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		134F14721B3CF6FC0016C386 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				134F14731B3CF6FC0016C386 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		134F14811B3CF6FC0016C386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		134F14821B3CF6FC0016C386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		134F14841B3CF6FC0016C386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ios-pocketsphinx-o/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		134F14851B3CF6FC0016C386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ios-pocketsphinx-o/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		134F14871B3CF6FC0016C386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ios-pocketsphinx-oTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-pocketsphinx-o.app/ios-pocketsphinx-o";
+			};
+			name = Debug;
+		};
+		134F14881B3CF6FC0016C386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ios-pocketsphinx-oTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-pocketsphinx-o.app/ios-pocketsphinx-o";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		134F145B1B3CF6FC0016C386 /* Build configuration list for PBXProject "ios-pocketsphinx-o" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134F14811B3CF6FC0016C386 /* Debug */,
+				134F14821B3CF6FC0016C386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		134F14831B3CF6FC0016C386 /* Build configuration list for PBXNativeTarget "ios-pocketsphinx-o" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134F14841B3CF6FC0016C386 /* Debug */,
+				134F14851B3CF6FC0016C386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		134F14861B3CF6FC0016C386 /* Build configuration list for PBXNativeTarget "ios-pocketsphinx-oTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134F14871B3CF6FC0016C386 /* Debug */,
+				134F14881B3CF6FC0016C386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 134F14581B3CF6FC0016C386 /* Project object */;
+}
