@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import <OpenEars/OEEventsObserver.h>
+#import <OpenEars/OEPocketsphinxController.h>
+
+@protocol ETASREngineWrapperDelegate <NSObject>
+- (void)engineWrapperEndsRecognitionWithResults:(NSString *)resultStrings;
+@end
+
+@interface ViewController : UIViewController <OEEventsObserverDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *feedbackTextLabel;
+
+@property (nonatomic, strong) id<ETASREngineWrapperDelegate>wrapperDelegate;
+
 @end
 

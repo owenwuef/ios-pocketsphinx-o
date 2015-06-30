@@ -14,6 +14,8 @@
 		134F14711B3CF6FC0016C386 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134F14701B3CF6FC0016C386 /* Images.xcassets */; };
 		134F14741B3CF6FC0016C386 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134F14721B3CF6FC0016C386 /* LaunchScreen.xib */; };
 		134F14801B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F147F1B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m */; };
+		13A95B981B4273D300863A33 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 13A95B961B4273D300863A33 /* AcousticModelEnglish.bundle */; };
+		13A95B991B4273D300863A33 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A95B971B4273D300863A33 /* OpenEars.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		134F147E1B3CF6FC0016C386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		134F147F1B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_pocketsphinx_oTests.m; sourceTree = "<group>"; };
 		13A95B791B4269FE00863A33 /* OpenEars.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenEars.xcodeproj; path = OpenEarsDistribution/OpenEars/OpenEars.xcodeproj; sourceTree = "<group>"; };
+		13A95B961B4273D300863A33 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AcousticModelEnglish.bundle; path = OpenEarsDistribution/Framework/AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		13A95B971B4273D300863A33 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEars.framework; path = OpenEarsDistribution/Framework/OpenEars.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A95B991B4273D300863A33 /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,8 @@
 		134F14571B3CF6FC0016C386 = {
 			isa = PBXGroup;
 			children = (
+				13A95B961B4273D300863A33 /* AcousticModelEnglish.bundle */,
+				13A95B971B4273D300863A33 /* OpenEars.framework */,
 				13A95B791B4269FE00863A33 /* OpenEars.xcodeproj */,
 				134F14621B3CF6FC0016C386 /* ios-pocketsphinx-o */,
 				134F147C1B3CF6FC0016C386 /* ios-pocketsphinx-oTests */,
@@ -293,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				134F146F1B3CF6FC0016C386 /* Main.storyboard in Resources */,
+				13A95B981B4273D300863A33 /* AcousticModelEnglish.bundle in Resources */,
 				134F14741B3CF6FC0016C386 /* LaunchScreen.xib in Resources */,
 				134F14711B3CF6FC0016C386 /* Images.xcassets in Resources */,
 			);
@@ -440,6 +448,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenEarsDistribution/Framework",
+				);
 				INFOPLIST_FILE = "ios-pocketsphinx-o/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -454,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenEarsDistribution/Framework",
+				);
 				INFOPLIST_FILE = "ios-pocketsphinx-o/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
