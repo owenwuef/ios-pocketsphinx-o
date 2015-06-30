@@ -221,7 +221,7 @@ state_align_search_finish(ps_search_t *search)
         /* State boundary, update alignment entry for next state. */
         if (state != next_state) {
             itor = ps_alignment_iter_goto(itor, next_state);
-            assert(itor != NULL);
+//            assert(itor != NULL);
             ent = ps_alignment_iter_get(itor);
             ent->start = frame + 1;
             ent->duration = next_start - ent->start;
@@ -233,7 +233,7 @@ state_align_search_finish(ps_search_t *search)
     }
     /* Update alignment entry for initial state. */
     itor = ps_alignment_iter_goto(itor, 0);
-    assert(itor != NULL);
+//    assert(itor != NULL);
     ent = ps_alignment_iter_get(itor);
     ent->start = 0;
     ent->duration = next_start;
@@ -270,10 +270,10 @@ static ps_searchfuncs_t state_align_search_funcs = {
     /* finish: */ state_align_search_finish,
     /* reinit: */ state_align_search_reinit,
     /* free: */   state_align_search_free,
-    /* lattice: */  NULL,
-    /* hyp: */      NULL,
-    /* prob: */     NULL,
-    /* seg_iter: */ NULL,
+//    /* lattice: */  NULL,
+//    /* hyp: */      NULL,
+//    /* prob: */     NULL,
+//    /* seg_iter: */ NULL,
 };
 
 ps_search_t *
@@ -288,12 +288,12 @@ state_align_search_init(cmd_ln_t *config,
     sas = ckd_calloc(1, sizeof(*sas));
     ps_search_init(ps_search_base(sas), &state_align_search_funcs,
                    config, acmod, al->d2p->dict, al->d2p);
-    sas->hmmctx = hmm_context_init(bin_mdef_n_emit_state(acmod->mdef),
-                                   acmod->tmat->tp, NULL, acmod->mdef->sseq);
-    if (sas->hmmctx == NULL) {
-        ckd_free(sas);
-        return NULL;
-    }
+//    sas->hmmctx = hmm_context_init(bin_mdef_n_emit_state(acmod->mdef),
+//                                   acmod->tmat->tp, NULL, acmod->mdef->sseq);
+//    if (sas->hmmctx == NULL) {
+//        ckd_free(sas);
+//        return NULL;
+//    }
     sas->al = al;
 
     /* Generate HMM vector from phone level of alignment. */
