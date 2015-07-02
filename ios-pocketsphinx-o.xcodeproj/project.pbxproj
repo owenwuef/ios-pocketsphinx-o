@@ -14,18 +14,7 @@
 		134F14711B3CF6FC0016C386 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134F14701B3CF6FC0016C386 /* Images.xcassets */; };
 		134F14741B3CF6FC0016C386 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134F14721B3CF6FC0016C386 /* LaunchScreen.xib */; };
 		134F14801B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F147F1B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m */; };
-		2BE6C9021B43F4F6003D7F17 /* AcousticModelEnglish-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6E61B43F4F5003D7F17 /* AcousticModelEnglish-Info.plist */; };
-		2BE6C9031B43F4F6003D7F17 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6E91B43F4F5003D7F17 /* feat.params */; };
-		2BE6C9041B43F4F6003D7F17 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6EA1B43F4F5003D7F17 /* mdef */; };
-		2BE6C9051B43F4F6003D7F17 /* means in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6EB1B43F4F5003D7F17 /* means */; };
-		2BE6C9061B43F4F6003D7F17 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6EC1B43F4F5003D7F17 /* noisedict */; };
-		2BE6C9071B43F4F6003D7F17 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6ED1B43F4F5003D7F17 /* README */; };
-		2BE6C9081B43F4F6003D7F17 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6EE1B43F4F5003D7F17 /* sendump */; };
-		2BE6C9091B43F4F6003D7F17 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6EF1B43F4F5003D7F17 /* transition_matrices */; };
-		2BE6C90A1B43F4F6003D7F17 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6F01B43F4F5003D7F17 /* variances */; };
-		2BE6C90B1B43F4F6003D7F17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6F11B43F4F5003D7F17 /* InfoPlist.strings */; };
-		2BE6C90C1B43F4F6003D7F17 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE6C6F31B43F4F5003D7F17 /* Info.plist */; };
-		2BE6C90D1B43F4F6003D7F17 /* LanguageModelGeneratorLookupList.text in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6C6F41B43F4F5003D7F17 /* LanguageModelGeneratorLookupList.text */; };
+		13878D131B44D98900FAE0F3 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 13878D121B44D98900FAE0F3 /* AcousticModelEnglish.bundle */; };
 		2BE6C90E1B43F4F6003D7F17 /* OEAcousticModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6C70E1B43F4F5003D7F17 /* OEAcousticModel.m */; };
 		2BE6C90F1B43F4F6003D7F17 /* OEAudioUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6C70F1B43F4F5003D7F17 /* OEAudioUtilities.m */; };
 		2BE6C9101B43F4F6003D7F17 /* OECMUCLMTKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6C7101B43F4F5003D7F17 /* OECMUCLMTKModel.m */; };
@@ -314,19 +303,7 @@
 		134F14791B3CF6FC0016C386 /* ios-pocketsphinx-oTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-pocketsphinx-oTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		134F147E1B3CF6FC0016C386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		134F147F1B3CF6FC0016C386 /* ios_pocketsphinx_oTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_pocketsphinx_oTests.m; sourceTree = "<group>"; };
-		2BE6C6E61B43F4F5003D7F17 /* AcousticModelEnglish-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AcousticModelEnglish-Info.plist"; sourceTree = "<group>"; };
-		2BE6C6E71B43F4F5003D7F17 /* AcousticModelEnglish-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AcousticModelEnglish-Prefix.pch"; sourceTree = "<group>"; };
-		2BE6C6E91B43F4F5003D7F17 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
-		2BE6C6EA1B43F4F5003D7F17 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
-		2BE6C6EB1B43F4F5003D7F17 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
-		2BE6C6EC1B43F4F5003D7F17 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
-		2BE6C6ED1B43F4F5003D7F17 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		2BE6C6EE1B43F4F5003D7F17 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
-		2BE6C6EF1B43F4F5003D7F17 /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
-		2BE6C6F01B43F4F5003D7F17 /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
-		2BE6C6F21B43F4F5003D7F17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2BE6C6F31B43F4F5003D7F17 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BE6C6F41B43F4F5003D7F17 /* LanguageModelGeneratorLookupList.text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LanguageModelGeneratorLookupList.text; sourceTree = "<group>"; };
+		13878D121B44D98900FAE0F3 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = SOURCE_ROOT; };
 		2BE6C6F71B43F4F5003D7F17 /* OEAcousticModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEAcousticModel.h; sourceTree = "<group>"; };
 		2BE6C6F81B43F4F5003D7F17 /* OEAudioUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEAudioUtilities.h; sourceTree = "<group>"; };
 		2BE6C6F91B43F4F5003D7F17 /* OECMUCLMTKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OECMUCLMTKModel.h; sourceTree = "<group>"; };
@@ -823,7 +800,7 @@
 		134F14621B3CF6FC0016C386 /* ios-pocketsphinx-o */ = {
 			isa = PBXGroup;
 			children = (
-				2BE6C6E51B43F4F5003D7F17 /* AcousticModelEnglish */,
+				13878D121B44D98900FAE0F3 /* AcousticModelEnglish.bundle */,
 				2BE6C6F51B43F4F5003D7F17 /* Classes */,
 				2BE6C7211B43F4F6003D7F17 /* Dependencies */,
 				134F14671B3CF6FC0016C386 /* AppDelegate.h */,
@@ -862,34 +839,6 @@
 				134F147E1B3CF6FC0016C386 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2BE6C6E51B43F4F5003D7F17 /* AcousticModelEnglish */ = {
-			isa = PBXGroup;
-			children = (
-				2BE6C6E61B43F4F5003D7F17 /* AcousticModelEnglish-Info.plist */,
-				2BE6C6E71B43F4F5003D7F17 /* AcousticModelEnglish-Prefix.pch */,
-				2BE6C6E81B43F4F5003D7F17 /* en-us-semi */,
-				2BE6C6F11B43F4F5003D7F17 /* InfoPlist.strings */,
-				2BE6C6F31B43F4F5003D7F17 /* Info.plist */,
-				2BE6C6F41B43F4F5003D7F17 /* LanguageModelGeneratorLookupList.text */,
-			);
-			path = AcousticModelEnglish;
-			sourceTree = SOURCE_ROOT;
-		};
-		2BE6C6E81B43F4F5003D7F17 /* en-us-semi */ = {
-			isa = PBXGroup;
-			children = (
-				2BE6C6E91B43F4F5003D7F17 /* feat.params */,
-				2BE6C6EA1B43F4F5003D7F17 /* mdef */,
-				2BE6C6EB1B43F4F5003D7F17 /* means */,
-				2BE6C6EC1B43F4F5003D7F17 /* noisedict */,
-				2BE6C6ED1B43F4F5003D7F17 /* README */,
-				2BE6C6EE1B43F4F5003D7F17 /* sendump */,
-				2BE6C6EF1B43F4F5003D7F17 /* transition_matrices */,
-				2BE6C6F01B43F4F5003D7F17 /* variances */,
-			);
-			path = "en-us-semi";
 			sourceTree = "<group>";
 		};
 		2BE6C6F51B43F4F5003D7F17 /* Classes */ = {
@@ -1769,30 +1718,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE6C9071B43F4F6003D7F17 /* README in Resources */,
-				2BE6C90A1B43F4F6003D7F17 /* variances in Resources */,
 				2BE6CA171B43F4F7003D7F17 /* make_lite.py in Resources */,
-				2BE6C9051B43F4F6003D7F17 /* means in Resources */,
-				2BE6C90B1B43F4F6003D7F17 /* InfoPlist.strings in Resources */,
 				2BE6C9ED1B43F4F7003D7F17 /* make_log_sub_table.py in Resources */,
-				2BE6C9021B43F4F6003D7F17 /* AcousticModelEnglish-Info.plist in Resources */,
 				134F146F1B3CF6FC0016C386 /* Main.storyboard in Resources */,
-				2BE6C90C1B43F4F6003D7F17 /* Info.plist in Resources */,
-				2BE6C9061B43F4F6003D7F17 /* noisedict in Resources */,
-				2BE6C9081B43F4F6003D7F17 /* sendump in Resources */,
 				2BE6CA0F1B43F4F7003D7F17 /* fortran.py in Resources */,
 				2BE6C9C01B43F4F7003D7F17 /* fast_ptm.txt in Resources */,
-				2BE6C9091B43F4F6003D7F17 /* transition_matrices in Resources */,
 				2BE6CA081B43F4F7003D7F17 /* clapack_scrub.py in Resources */,
 				2BE6CA021B43F4F7003D7F17 /* plan.txt in Resources */,
-				2BE6C9041B43F4F6003D7F17 /* mdef in Resources */,
 				134F14741B3CF6FC0016C386 /* LaunchScreen.xib in Resources */,
-				2BE6C9031B43F4F6003D7F17 /* feat.params in Resources */,
 				2BE6CA221B43F4F7003D7F17 /* wrapped_routines in Resources */,
 				134F14711B3CF6FC0016C386 /* Images.xcassets in Resources */,
 				2BE6CA1C1B43F4F7003D7F17 /* README.python in Resources */,
 				2BE6C9EE1B43F4F7003D7F17 /* make_log_table.py in Resources */,
 				2BE6C9E31B43F4F7003D7F17 /* fe_design.txt in Resources */,
+				13878D131B44D98900FAE0F3 /* AcousticModelEnglish.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2013,7 +1952,6 @@
 				2BE6C9A61B43F4F7003D7F17 /* cst_args.c in Sources */,
 				2BE6C95D1B43F4F7003D7F17 /* idngram2stats.c in Sources */,
 				2BE6C9681B43F4F7003D7F17 /* cmu_us_kal_lpc_phon.c in Sources */,
-				2BE6C90D1B43F4F6003D7F17 /* LanguageModelGeneratorLookupList.text in Sources */,
 				2BE6C9851B43F4F7003D7F17 /* cst_cg.c in Sources */,
 				2BE6C9F31B43F4F7003D7F17 /* feat.c in Sources */,
 				2BE6C9411B43F4F7003D7F17 /* write_lms.c in Sources */,
@@ -2104,14 +2042,6 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		2BE6C6F11B43F4F5003D7F17 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BE6C6F21B43F4F5003D7F17 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -2199,7 +2129,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: // / (894U4TX649)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2234,7 +2164,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: // / (894U4TX649)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

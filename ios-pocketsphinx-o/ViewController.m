@@ -137,7 +137,6 @@
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:NO error:nil];
     
-//    _feedbackTextLabel.text = @"HELLO!";
 }
 
 - (IBAction)playTapped:(id)sender {
@@ -158,6 +157,7 @@
     
     id temp = [self init];
     NSLog(@"%s---%@",__FUNCTION__, temp);
+    
     [self startListening];
 }
 
@@ -186,7 +186,7 @@
     
     if(err == nil) {
         
-        
+
         self.pathToGrammarToStartAppWith = [lmGenerator pathToSuccessfullyGeneratedGrammarWithRequestedName:name];
         self.pathToDictionaryToStartAppWith = [lmGenerator pathToSuccessfullyGeneratedDictionaryWithRequestedName:name];
         NSLog(@"grammar %@ \nDictionary %@", [NSString stringWithContentsOfFile:self.pathToGrammarToStartAppWith encoding:NSUTF8StringEncoding error:nil],[NSString stringWithContentsOfFile:self.pathToDictionaryToStartAppWith encoding:NSUTF8StringEncoding error:nil]);
@@ -198,14 +198,12 @@
     }
     
     
-    
 }
 
 - (void)startListening {
     
     [self.sphinxController setActive:TRUE error:nil];
     
-    //    [self.sphinxController setSecondsOfSilenceToDetect:2];
     //self.sphinxController.pathToTestFile = wavFilePath;
     self.sphinxController.returnNbest= YES;
     self.sphinxController.nBestNumber= 150;
@@ -262,7 +260,7 @@
 -(void) pocketsphinxDidReceiveNBestHypothesisArray:(NSArray *)hypothesisArray
 {
     NSLog(@"hypothesis %@", hypothesisArray);
-    [self.sphinxController stopListening];
+//    [self.sphinxController stopListening];
     dispatch_async(dispatch_get_main_queue(), ^{
         for (NSDictionary * hypoDict in hypothesisArray) {
             _feedbackTextLabel.text = [hypoDict objectForKey:@"Hypothesis"];
