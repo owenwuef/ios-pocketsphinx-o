@@ -186,12 +186,11 @@
     
     if(err == nil) {
         
-
         self.pathToGrammarToStartAppWith = [lmGenerator pathToSuccessfullyGeneratedGrammarWithRequestedName:name];
         self.pathToDictionaryToStartAppWith = [lmGenerator pathToSuccessfullyGeneratedDictionaryWithRequestedName:name];
         NSLog(@"grammar %@ \nDictionary %@", [NSString stringWithContentsOfFile:self.pathToGrammarToStartAppWith encoding:NSUTF8StringEncoding error:nil],[NSString stringWithContentsOfFile:self.pathToDictionaryToStartAppWith encoding:NSUTF8StringEncoding error:nil]);
-        [self startListening];
-        
+//        [self startListening];
+//        [self performSelectorInBackground:@selector(startListening) withObject:nil];
         
     } else {
         NSLog(@"Error Model: %@",[err localizedDescription]);
@@ -261,13 +260,12 @@
 {
     NSLog(@"hypothesis %@", hypothesisArray);
 //    [self.sphinxController stopListening];
-    dispatch_async(dispatch_get_main_queue(), ^{
+//    dispatch_async(dispatch_get_main_queue(), ^{
         for (NSDictionary * hypoDict in hypothesisArray) {
             _feedbackTextLabel.text = [hypoDict objectForKey:@"Hypothesis"];
          }
 //        [self compareWithHypothesisArray:hypothesisArray];
-        
-    });
+//    });
     
 }
 

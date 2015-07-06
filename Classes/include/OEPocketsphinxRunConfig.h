@@ -113,7 +113,7 @@
 
 /** Command-line options for keyword spotting */
 
-// #define kKEYPHRASE @"null" // "-keyphrase", string, default NULL, Keyphrase to spot
+// #define kKEYPHRASE @"HELLO" // "-keyphrase", string, default NULL, Keyphrase to spot
 // #define kKWS @"null" // "-kws", string, default NULL, A file with keyphrases to spot, one per line
 // #define kKWS_PLP @"null" // "-kws_plp", float, default "1e-1", Phone loop probability for keyword spotting
 // #define kKWS_THRESHOLD @"null" // "-kws_threshold", float, default "1", Threshold for p(hyp)/p(alternatives) ratio
